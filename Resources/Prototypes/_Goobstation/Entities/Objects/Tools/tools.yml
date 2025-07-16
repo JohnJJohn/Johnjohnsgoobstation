@@ -31,10 +31,11 @@
     tags:
     - Multitool
   - type: Flash
-    duration: 20000
-    aoeFlashDuration: 10000
+    MeleeStunDuration: 5000
+    duration: 5000
+    aoeFlashDuration: 0
     slowTo: 0.2
-    range: 15
+    range: 0
   - type: MeleeWeapon
     wideAnimationRotation: 180
     damage:
