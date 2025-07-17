@@ -1056,3 +1056,37 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+- type: entity
+  id: psychicpaper
+  parent: IDCardStandard
+  name: psychic paper
+  description: an old earth relic, previously used for identification before they were replace with the new identification system, looks offical.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/psychic_paper.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Objects/Fun/psychic_paper.rsi
+  - type: Access
+    groups:
+    - AllAccess
+  - type: AgentIDCard
+  - type: ActivatableUI
+    key: enum.AgentIDCardUiKey.Key
+    inHandsOnly: true
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: ChameleonClothing
+    slot: [idcard]
+    default: psychicpaper
+  - type: UserInterface
+    interfaces:
+      enum.AgentIDCardUiKey.Key:
+        type: AgentIDCardBoundUserInterface
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: NanoChatCard # DeltaV
+    listNumber: false
